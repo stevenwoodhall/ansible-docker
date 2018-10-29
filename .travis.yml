@@ -1,0 +1,16 @@
+dist: trusty
+
+sudo: required
+
+services: docker
+
+language: bash
+
+branches:
+  only:
+    - master
+
+script:
+  - docker build -t z7ev3n/ansible:kali kali/
+  - docker build -t z7ev3n/ansible:fedora fedora/
+  - docker build -t z7ev3n/ansible:ubuntu ubuntu/
