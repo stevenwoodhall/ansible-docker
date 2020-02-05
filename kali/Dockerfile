@@ -5,6 +5,7 @@ LABEL maintainer="steven@z7ev3n.com"
 ENV PACKAGES \
     ansible \
     curl \
+    dos2unix \
     git \
     sudo \
     unzip \
