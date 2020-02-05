@@ -1,15 +1,14 @@
-FROM kalilinux/kali-linux-docker:latest
+FROM kalilinux/kali-rolling:latest
 
 LABEL maintainer="steven@z7ev3n.com"
 
 ENV PACKAGES \
     ansible \
     curl \
-    dos2unix \
-    git \
     sudo \
     unzip \
-    openssh-server
+    kali-linux-light
+
 
 RUN apt-get -qq update && \
     apt-get -qq install --fix-missing && \
