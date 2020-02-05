@@ -7,7 +7,8 @@ ENV PACKAGES \
     curl \
     git \
     sudo \
-    unzip
+    unzip \
+    openssh-server
 
 RUN apt-get -qq update && \
     apt-get -qq install --fix-missing && \
